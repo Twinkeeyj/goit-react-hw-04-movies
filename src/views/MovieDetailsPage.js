@@ -5,7 +5,9 @@ import { Link, Route, Switch } from 'react-router-dom';
 import Cast from '../component/Cast/Cast';
 import Reviews from '../component/Reviews/Reviews';
 import Card from "../component/Card/Card"
-// import "@babel/polyfill"
+import routes from "../routes"
+
+import MoviesPages from "../views/MoviesPage"
 
 export default class MovieDetailsPage extends Component {
   state = {
@@ -18,18 +20,26 @@ export default class MovieDetailsPage extends Component {
        this.setState({ page: response.data });
     return;
   }
-
+  handleGoBack = () => {
+    const { state } = this.props.location;
+    // console.log(MoviesPages)
+    if (state && state.from) {
+      // <MoviesPages query={state.from.search}/>
+      return this.props.history.push(state.from)
+    }
+    this.props.history.push(routes.HomePage);
+  };
 
   render() {
     const {page}=this.state
-    // console.log(this.state.page);
+
     return (
       <>
         {this.state.page && (
           <div>
-            <div>
-              <Link to="/">Go back</Link>
-            </div>
+            <button type="button" onClick={this.handleGoBack}>
+              Назад
+            </button>
             <div>
                 <Card {...page}/>
               <ul>
@@ -61,4 +71,3 @@ export default class MovieDetailsPage extends Component {
     );
   }
 }
-// backdrop_path
