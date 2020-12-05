@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import PropTypes from 'prop-types'
+
 
 export default class Search extends Component {
 
@@ -14,7 +14,7 @@ export default class Search extends Component {
   };
   handleSubmit = (e) => {
     e.preventDefault();
-   
+
     this.props.changeAdress(this.state.value);
   };
   render() {
