@@ -7,9 +7,26 @@ import routes from "../routes"
 const Nawigation = () => {
   return(
     <header>
-    <nav>
-    <NavLink exact to={routes.HomePage}>Home </NavLink>
-    <NavLink exact to={routes.MoviesPage}>movies </NavLink>
+    <nav >
+
+                  <NavLink
+                    exact
+                    to={routes.HomePage}
+                    className="link-nav"
+                    activeClassName="link-is-active"
+                  >
+                   Home
+                  </NavLink>
+
+                  <NavLink
+                    to={routes.MoviesPage}
+                    className="link-nav"
+                    activeClassName="link-is-active"
+                  >
+                   Movies
+                  </NavLink>
+
+
      </nav>
      </header>
   )

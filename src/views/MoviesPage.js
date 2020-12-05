@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Axios from 'axios';
 import Search from '../component/Serch/Serch';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import queryString from 'query-string';
 
 export default class MoviesPage extends Component {
@@ -64,22 +64,26 @@ export default class MoviesPage extends Component {
       <>
         <Search changeAdress={this.changeAdress} />
         {totalResults > 1 ||error? (
-          <ul>
+          <div Class="container-home" >
+          <h2 class="home-title">Your request:</h2>
+          <ul >
             {this.state.shows.map(movie => (
               <li key={movie.id}>
-                <Link
+                <NavLink
                   to={{
                     pathname: `${this.props.match.url}/${movie.id}`,
                     state: { from: this.props.location },
                   }}
+                  Class="list-movies"
                 >
                   {movie.name || movie.title}
-                </Link>
+                </NavLink>
               </li>
             ))}
           </ul>
+          </div>
         ) : (
-          (query !== "" || error) && <h3>Nothing found for your request</h3>
+          (query !== "" || error) && <h3 Class="movies-error">Nothing found for your request =(</h3>
         )}
       </>
     );

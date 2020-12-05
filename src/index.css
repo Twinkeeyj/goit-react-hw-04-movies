@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  /* outline:   1px solid rgb(247, 17, 17);; */
+}
+
+.button {
+  width: 100px;
+  height: 30px;
+  background-color: rgb(241, 232, 222);
+  margin-bottom: 3px;
+  cursor: pointer;
+}
+.button:hover {
+  color: rgb(243, 157, 59);
+}
+.link-is-active {
+  color: rgb(8, 8, 8);
+  margin: 15px;
+  font-size: 30px;
+}
+.link-nav{
+  display: inline-block;
+  border-radius: 2px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(5, 5, 5);
+    width: 100px;
+    background-color: rgb(241, 222, 228);
+}
+.list-movies {
+  color: rgb(8, 8, 8);
+  font-size: 25px;
+}
+.list-movies:hover {
+  color: rgb(243, 157, 59);
+  font-size: 30px;
+}
+
+nav {
+  margin-bottom: 15px;
+  padding-left: 25px;
+  background-color: rgb(241, 232, 222);
+  box-shadow: 3px 5px 10px 1px #f0f29d;
+}
+.home-title {
+  margin-bottom: 15px;
+}
+
+.container-home {
+  padding: 15px;
+}
+.serch-container {
+  margin: 10px;
+}
+.serch-input {
+  width: 250px;
+  height: 25px;
+}
+.movies-error {
+  margin-left: 25px;
+  font-size: 30px;
+}
+.container-movie-page {
+  padding: 2px;
+}
+.container-cards {
+  display: flex;
+  padding: 10px;
+  border-bottom: 2px solid slategray;
+  margin-bottom: 10px;
+}
+.cards-info{
+  display: block;
+  padding: 10px;
+}
+.cards-poster{
+  width: 250px;
+  height: 350px;
+  margin-right: 20px;
+}
+.cards-info-text{
+margin-bottom: 15px;
+}
+.card-genres{
+  display: flex;
+}
+.card-genres-list{
+  margin-left: 5px;
+}
+.container-additional-info{
+  /* display: flex; */
+  padding: 10px;
+  border-bottom: 2px solid slategray;
+
+
+}
+.additional-container-button{
+  padding-bottom: 20px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+.additional-button{
+  display: inline-block;
+  border-radius: 2px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(5, 5, 5);
+    width: 100px;
+    background-color: rgb(241, 232, 222);
+}
+.additional-button:hover {
+  color: rgb(243, 157, 59);
+}
+.reviews-container{
+  padding: 10px;
+}
+.reviews-text{
+  width: 1000px;
+}
+.card-overview-text{
+  width: 700px;
+}
+
+
+ .cast-list{
+  display: flex;
+  /* padding-left: 35px; */
+flex-wrap: wrap;
+width: 1500px;
+margin: 0 auto;
+}
+
+.cast-list-item{
+
+  margin: 5px;
+   max-width: 250;
+   height: 400px;
+   text-align: center;
+   border: 2px solid rgb(250, 223, 193);
+   background-color: rgb(251, 236, 218);
+
+}
+.list-item-text{
+ width: 200px;
+}

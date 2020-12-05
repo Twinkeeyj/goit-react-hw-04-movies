@@ -4,31 +4,31 @@ import Axios from 'axios';
 
 class Cast extends Component {
   state = {
-    actores: [],
+    actores: null,
   };
   async componentDidMount() {
     const response = await Axios.get(
       `https://api.themoviedb.org/3/movie/${this.props.id}/credits?api_key=401d61f37c17d956a98039a1a0734109&language=en-US`,
     );
-    
+
     this.setState({ actores: response.data.cast });
   }
   render() {
     return (
-      <ul>
+      <ul Class="cast-list">
         {this.state.actores ? (
           this.state.actores.map(e => (
-            <li key={e.cast_id}>
+            <li key={e.cast_id} Class="cast-list-item" >
               <img
                 src={
                   e.profile_path
                     ? `https://image.tmdb.org/t/p/w300${e.profile_path}`
-                    : 'https://rimatour.com/wp-content/uploads/2017/09/No-image-found.jpg'
+                    : 'https://lh3.googleusercontent.com/proxy/XfJCn8VF_kzZNV5Eke7kf9yUpe6S8GuJlceWjhbecavmJ8prx_5Mfnq0vhDui5jsYrPjkeUfZ8fQ_325_jR50qc8vq-kJiw7nYB2K7zQRSNXItBulBm3KfzOg6y3S7MqsOc'
                 }
-                alt=""
+                alt="" Class="cast-img" width="200" height="300"
               />
-              <h2>{e.name}</h2>
-              <p>character: {e.character}</p>
+              <h2 Class="list-item-text">{e.name}</h2>
+              <p Class="list-item-text">character: {e.character}</p>
             </li>
           ))
         ) : (

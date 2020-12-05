@@ -19,10 +19,10 @@ export default class Search extends Component {
   };
   render() {
     return (
-      <div>
+      <div Class="serch-container">
         <form action="" onSubmit={this.handleSubmit}>
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
-          <button type="submit">Search</button>
+          <input type="text" value={this.state.value} onChange={this.handleChange} Class="serch-input"/>
+          <button type="submit" Class="button">Search</button>
         </form>
       </div>
     );

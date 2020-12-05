@@ -16,12 +16,12 @@ class Reviews extends Component {
   }
   render() {
     return (
-      <ul>
+      <ul Class="reviews-container">
         {this.state.reviews.length > 0 ? (
           this.state.reviews.map(e => (
             <li key={e.id}>
-              <h2>Author: {e.author}</h2>
-              <p>{e.content}</p>
+              <h2 Class="cards-info-text">Author: {e.author}</h2>
+              <p Class="cards-info-text reviews-text">{e.content}</p>
             </li>
           ))
         ) : (

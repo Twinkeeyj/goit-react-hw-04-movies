@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Axios from 'axios';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default class HomePage extends Component {
   state = {
@@ -17,17 +17,19 @@ export default class HomePage extends Component {
 
   render() {
     return (
-      <>
-        <ul>
+      <div Class="container-home">
+        <h1 class="home-title">Trending today</h1>
+        <ul >
           {this.state.movies.map(m => (
             <li key={m.id}>
-              <Link to={`${this.props.match.url}movies/${m.id}`}>
+              <NavLink Class="list-movies" to={`${this.props.match.url}movies/${m.id}`} >
                 {m.title || m.name}
-              </Link>
+              </NavLink>
+
             </li>
           ))}
         </ul>
-      </>
+      </div>
     );
   }
 }
