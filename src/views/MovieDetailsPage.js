@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Axios from 'axios';
-import { Link, Route, Switch, NavLink } from 'react-router-dom';
+import {Route, Switch, NavLink } from 'react-router-dom';
 import Cast from '../component/Cast/Cast';
 import Reviews from '../component/Reviews/Reviews';
 import Card from '../component/Card/Card';
@@ -27,7 +27,7 @@ export default class MovieDetailsPage extends Component {
 
   render() {
     const { page } = this.state;
-    console.log(page);
+
     return (
       <>
         {this.state.page && (

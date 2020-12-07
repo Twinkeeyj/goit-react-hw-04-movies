@@ -21,14 +21,14 @@
   margin: 15px;
   font-size: 30px;
 }
-.link-nav{
+.link-nav {
   display: inline-block;
   border-radius: 2px;
   text-align: center;
   color: rgb(0, 0, 0);
   border: 2px solid rgb(5, 5, 5);
-    width: 100px;
-    background-color: rgb(241, 222, 228);
+  width: 100px;
+  background-color: rgb(241, 222, 228);
 }
 .list-movies {
   color: rgb(8, 8, 8);
@@ -72,78 +72,73 @@ nav {
   border-bottom: 2px solid slategray;
   margin-bottom: 10px;
 }
-.cards-info{
+.cards-info {
   display: block;
   padding: 10px;
 }
-.cards-poster{
+.cards-poster {
   width: 250px;
   height: 350px;
   margin-right: 20px;
 }
-.cards-info-text{
-margin-bottom: 15px;
+.cards-info-text {
+  margin-bottom: 15px;
 }
-.card-genres{
+.card-genres {
   display: flex;
 }
-.card-genres-list{
+.card-genres-list {
   margin-left: 5px;
 }
-.container-additional-info{
+.container-additional-info {
   /* display: flex; */
   padding: 10px;
   border-bottom: 2px solid slategray;
-
-
 }
-.additional-container-button{
+.additional-container-button {
   padding-bottom: 20px;
   width: 250px;
   display: flex;
   justify-content: space-between;
 }
-.additional-button{
+.additional-button {
   display: inline-block;
   border-radius: 2px;
   text-align: center;
   color: rgb(0, 0, 0);
   border: 2px solid rgb(5, 5, 5);
-    width: 100px;
-    background-color: rgb(241, 232, 222);
+  width: 100px;
+  background-color: rgb(241, 232, 222);
 }
 .additional-button:hover {
   color: rgb(243, 157, 59);
 }
-.reviews-container{
+.reviews-container {
   padding: 10px;
 }
-.reviews-text{
+.reviews-text {
   width: 1000px;
 }
-.card-overview-text{
+.card-overview-text {
   width: 700px;
 }
 
-
- .cast-list{
+.cast-list {
   display: flex;
   /* padding-left: 35px; */
-flex-wrap: wrap;
-width: 1500px;
-margin: 0 auto;
+  flex-wrap: wrap;
+  width: 1500px;
+  margin: 0 auto;
 }
 
-.cast-list-item{
-
+.cast-list-item {
   margin: 5px;
-   max-width: 250;
-   height: 400px;
-   text-align: center;
-   border: 2px solid rgb(250, 223, 193);
-   background-color: rgb(251, 236, 218);
-
+  max-width: 250;
+  height: 400px;
+  text-align: center;
+  border: 2px solid rgb(250, 223, 193);
+  background-color: rgb(251, 236, 218);
 }
-.list-item-text{
- width: 200px;
+.list-item-text {
+  width: 200px;
 }
